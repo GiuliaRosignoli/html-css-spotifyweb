@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .sidebar-content {
@@ -15,8 +16,13 @@
 }
 
 .logo-img  {
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
+}
+
+.sidebar-content div {
+     padding: 0 10px;
+     padding-bottom: 8px;
 }
 
 .sidebar-content a {
