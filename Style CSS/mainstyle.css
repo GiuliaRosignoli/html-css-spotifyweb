@@ -2,4 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar-content {
+   /* display: flex; */
+  /*  flex-direction: column; */
+    max-width: 200px;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+.logo-img  {
+    width: 150px;
+    height: 150px;
+}
+
+.sidebar-content a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.small-icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.header-content {
+    height: 50px;
+    background-color: chartreuse;
+}
+
+.main-container {
+  /*  display: flex; */
+    flex-direction: row;
+    width: 80%;
+    background-color: red;
 }
