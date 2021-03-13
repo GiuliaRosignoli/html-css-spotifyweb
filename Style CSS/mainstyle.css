@@ -180,6 +180,14 @@ aside {
     object-fit: cover;
 }
 
+.col .disc-text {
+    text-align: center;
+} 
+
+.flex-start {
+    justify-content: flex-start;
+}
+
 
 /* FOOTER */
 
