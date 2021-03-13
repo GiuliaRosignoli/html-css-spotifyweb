@@ -23,25 +23,25 @@
     <main class="container">
         <aside class="sidebar">
             <!--Side-bar--> 
-            <div class="sidebar-content">
+            <div class="sidebar-content white-text">
                 <a href="#"><img class="logo-img" src="./img/logo.svg" alt="Logo Spotify"></a>
                 <div><a href="#"><span><i class="fas fa-home"></i></span> Home</a></div>
                 <div><a href="#"><span><i class="fas fa-search"></i></span> Cerca</a></div>
                 <div><a href="#"><img class="small-icon" src="./img/libreria.svg" alt=""> La tua libreria</a></div>
                 <div>PLAYLIST</div>
-                <div><span><i class="fas fa-plus-square"></i></span>Crea Playlist</div>
+                <div><a href="#"><span><i class="fas fa-plus-square"></i></span>Crea Playlist</a></div>
                 <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </div>
             <div class="bottom-aside">
-                <div class="bottom-aside text"><a href="#">Installa app</a></div>
+                <div class="bottom-aside text white-text"><a href="#">Installa app</a></div>
             </div>
         </aside>
         <section class="content"> 
@@ -49,79 +49,83 @@
                 <div class="header-content">
                     <button class="first-button">Effettua l'upgrade</button>
                 </div>
+                <section>  <!--INLINE LIST TOP-MENU-->
+                    <div class="menu container">
+                        <ul class="list container">
+                            <li><a href="#">IN EVIDENZA</a></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>
+                    </div>
+                </section>
             </header>
-            <section>  <!--INLINE LIST TOP-MENU-->
-                <div class="menu container">
-                    <ul class="list container">
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
-                    </ul>
-                </div>
-            </section>
-
+            
             <!--SPOTIFY CARDS section starts here-->
             <h2 class="title">Recently played</h2>
             <div class="main-content">
-               <div class="card-spotify"> <!--1st-->
-                    <div class="card-spotify-top">
-                        <img src="./img/metal_lifting.jpg" alt="Heavy Metal">
-                   </div>
-                   <div class="card-spotify-bottom">
-                        <h4>Heavy Metal</h4>
-                        <div>Subtitle</div>
-                   </div>   
-               </div>
-               <div class="card-spotify"> <!--2nd-->
-                    <div class="card-spotify-top">
-                        <img src="./img/stranger.jpeg" alt="Stranger Things">
+                <div class="gallery"> 
+                    <div class="col"> <!--1st-->
+                        <div class="disc">
+                            <a href="#"><img src="./img/metal_lifting.jpg" alt="Heavy Metal"></a>
+                            <h4>Heavy Metal</h4>
+                            <div>Subtitle</div>
+                        </div>          
                     </div>
-                    <div class="card-spotify-bottom"> 
-                        <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
-                        <div>Kyle Dixon & Micheal Stein</div>
+                                        
+                    <div class="col">   <!--2nd-->
+                        <div class="disc">
+                            <a href="#"><img src="./img/stranger.jpeg" alt="Stranger Things"></a>
+                            <h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                            <div>Kyle Dixon & Micheal Stein</div>
+                        </div>        
+                    </div>    
+            
+                    <div class="col"> <!--3rd-->
+                        <div class="disc"> 
+                            <a href="#"><img src="./img/aquietplace.jpeg" alt="A quiet place"></a>
+                            <h4>A quiet place</h4>
+                            <div>Subtitle</div>
+                        </div>
                     </div>
-               </div>
-               <div class="card-spotify">
-                    <div class="card-spotify-top"> <!--3rd-->
-                        <img src="./img/aquietplace.jpeg" alt="A quiet place">
+                           
+                    <div class="col">  <!--4th-->
+                        <div class="disc"> 
+                            <a href="#"><img src="./img/split.jpeg" alt="Split"></a>
+                            <h4>Split</h4>
+                            <div>Subtitle</div>
+                        </div>     
                     </div>
-                    <div class="card-spotify-bottom"> 
-                        <h4>A quiet place</h4>
-                        <div>Subtitle</div>
+
+                    <div class="col">   <!--5th-->
+                        <div class="disc"> 
+                            <a href="#"><img src="./img/cure.jpeg" alt="A cure for wellness"></a>
+                            <h4>A cure for wellness</h4>
+                            <div>Subtitle</div>
+                        </div>
                     </div>
-               </div>
-               <div class="card-spotify">
-                    <div class="card-spotify-top"> <!--4th-->
-                      <img src="./img/split.jpeg" alt="Split">
+
+                    <div class="col">   <!--6th-->
+                        <div class="disc"> 
+                            <a href="#"><img src="./img/sinister.jpeg" alt="Sinister"></a>
+                            <h4>Sinister</h4>
+                            <div>Subtitle</div>
+                        </div>
+                    </div>  
+
+                    <h2 class="title">Creato per John Doe</h2> 
+                    <div class="col">   <!--6th-->
+                        <div class="disc"> 
+                            <a href="#"><img src="./img/sinister.jpeg" alt="Sinister"></a>
+                            <h4>Release Radar</h4>
+                            <div>Subtitle</div>
+                        </div>
                     </div>
-                    <div class="card-spotify-bottom"> 
-                        <h4>Split</h4>
-                        <div>Subtitle</div>
-                    </div>
-               </div>
-               <div class="card-spotify">
-                   <div class="card-spotify-top"> <!--5th-->
-                        <img src="./img/cure.jpeg" alt="A cure for wellness">
-                    </div>
-                    <div class="card-spotify-bottom"> 
-                        <h4>A cure for wellness</h4>
-                        <div>Subtitle</div>
-                    </div>
-                </div>
-                <div class="card-spotify">
-                    <div class="card-spotify-top"> <!--6th-->
-                        <img src="./img/sinister.jpeg" alt="Sinister">
-                    </div>
-                    <div class="card-spotify-bottom"> 
-                        <h4>Sinister</h4>
-                        <div>Subtitle</div>
-                    </div>
-                </div>
                 </div>
             </div>  <!--/SPOTIFY CARDS section-->
+        
         </section>
 
     </main>
