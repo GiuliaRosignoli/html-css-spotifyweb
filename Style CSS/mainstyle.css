@@ -6,12 +6,16 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
+    color: #fff;
 }
 
 .container {
-    display: flex;
+    height: calc(100vh - 50px);
 } 
 
+a {
+    color: #fff;
+}
 
 /* UTILITIES */
 
@@ -30,6 +34,10 @@
     margin-top: 20px;
     margin-bottom: 25px;
     padding: 0 20px;
+}
+
+.small-logo {
+    display: none;
 }
 
 .sidebar {
@@ -55,7 +63,7 @@
 
 .header-content {
     height: 70px;
-    background-color: chartreuse;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .small-icon {
@@ -88,12 +96,22 @@ aside {
     text-decoration: none;
 }
 
-.bottom-aside.container {
-  /*  align-items: flex-end; */
+/* Bottom Aside */
+
+.bottom-aside {
+    padding-top: 100px;
 }
 
 .bottom-aside.text {
     margin-bottom: 1px solid #fff;
+}
+
+.profile-img-flex {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border-radius: 50%;
 }
 
 
@@ -101,9 +119,12 @@ aside {
 /* CONTENT */
 
 .content {
+    justify-content: center;
+    height: 100%;
     flex-grow: 2;
     width: 85%;
-    background-color: orange;
+    overflow-y: auto;
+    background-color: #161e27;
 }
 
 .header-content {
@@ -115,68 +136,63 @@ aside {
 }
 
 .header-content .first-button {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 30px;
-        padding: 20px 30px;
-        margin-right: 20px;
-        border: 1px solid #fff;
-        border-radius: 30px;
-}
-  /*  position: absolute;
-    padding: 8px;
-    padding-left: 30px;
-    padding-right: 30px;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    padding: 20px 30px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
     border-radius: 30px;
-    text-transform: uppercase;
-} */
-
+    cursor: pointer;
+}
 
 /* Top- menu */
-.container .menu.container {
+.container .menu.flex {
     height: 50px;
 }
 
-.container .list.container {
+.container .list.flex {
     padding: 10px;
     margin: 0 auto;
 }
 
-.container .menu.container li {
+.container .menu.flex li {
     padding: 10px;
     padding-right: 20px;
     list-style: none;
+    color: #fff;
 }
 
-.container .menu.container li a {
+.container .menu.flex li a {
     text-decoration: none;
 }
 
-.title {
+.title.white-text {
     font-size: 1.5rem;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-bottom: 25px;
-    color: ;
+}
+
+.next.title.white-text {
+    padding-top: 100px;
+    padding-bottom: 10px;
 }
 
 
 /* SPOTIFY CARDS section */
 
-.main-content {
+/*.general-container-galleries {
     height: calc(100vh - 170px);
-    padding: 20px 0;
+    padding: 20px 0; */
 }
 
-.gallery {
+.cd-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
     height: 100%;
-    overflow-y: auto; 
 }
 
 .col {
@@ -210,7 +226,31 @@ footer {
     background-color: blueviolet;
 }
 
+/*__________________________________________________ /*
+
+        /*RESPONSIVE */
+
 
 /* MEDIA QUERIES */
 
-@media and screen ()
+@media and screen (min-width: 601px) {
+    .small-logo {
+        display: block;
+    }
+
+    .logo-img {
+        display: none;
+    }
+}
+
+
+
+
+/*  Notes:
+   The navbar does scroll
+   Bottom aside - flex / position? 
+   Footer - text (and how to insert a player) 
+   Responsive - mediaqueries and flex columns? */
+   
+   
+

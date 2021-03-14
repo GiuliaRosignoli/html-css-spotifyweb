@@ -20,14 +20,16 @@
 </head>
 <body>
     <!--Main-->
-    <main class="container">
+    <main class="container flex">
         <aside class="sidebar">
-            <!--Side-bar--> 
-            <div class="sidebar-content white-text">
+            <!--Sidebar-->    <!--top-->
+            <div class="sidebar-content white-text"> <!--Full-size Logo -->
                 <a href="#"><img class="logo-img" src="./img/logo.svg" alt="Logo Spotify"></a>
+                <a href="#"><img class="small-logo" src="./img/logo-small.svg" alt="Small-size Logo Spotify"></a>
                 <div><a href="#"><span><i class="fas fa-home"></i></span> Home</a></div>
                 <div><a href="#"><span><i class="fas fa-search"></i></span> Cerca</a></div>
                 <div><a href="#"><img class="small-icon" src="./img/libreria.svg" alt=""> La tua libreria</a></div>
+
                 <div>PLAYLIST</div> <!--Playlist list-item-->
                 <div><a href="#"><span><i class="fas fa-plus-square"></i></span>Crea Playlist</a></div>
                 <ul>
@@ -41,38 +43,44 @@
                 </ul>
             </div>
 
-            <div class="bottom-aside">
+            <div class="bottom-aside"> <!--Sidebar Bottom section-->
                 <div class="bottom-aside text white-text"><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a></div>
+                <div class="profile-img">
+                <img src="./img/profile.svg" alt="Profile-img">
+                <h3 class="white-text">John Doe</h3>
+            </div>
             </div>
         </aside>
-        <section class="content"> 
-            <header>
-                <div class="header-content">
-                    <button class="first-button">Effettua l'upgrade</button>
+
+            <section class="content col-2"> 
+          
+                <div class="header-content">        <!--Button - right-->
+                    <button class="first-button white-text">Effettua l'upgrade</button>
                 </div>
-                <section>  <!-- INLINE LIST TOP-MENU-->
-                    <div class="menu container">
-                        <ul class="list container">
-                            <li><a href="#">IN EVIDENZA</a></li>
-                            <li><a href="#">PODCAST</a></li>
-                            <li><a href="#">CLASSIFICHE</a></li>
-                            <li><a href="#">GENERI E MOOD</a></li>
-                            <li><a href="#">NUOVE USCITE</a></li>
-                            <li><a href="#">SCOPRI</a></li>
-                        </ul>
-                    </div>
+
+                <section>  <!--  NAVIGATION INLINE LIST TOP-MENU-->
+                   <nav> 
+                        <div class="menu flex">
+                            <ul class="list flex">
+                                <li><a href="#">IN EVIDENZA</a></li>
+                                <li><a href="#">PODCAST</a></li>
+                                <li><a href="#">CLASSIFICHE</a></li>
+                                <li><a href="#">GENERI E MOOD</a></li>
+                                <li><a href="#">NUOVE USCITE</a></li>
+                                <li><a href="#">SCOPRI</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </section>
-            </header>
+            
             
             <!--SPOTIFY CARDS section starts here-->
-
-            <h2 class="title">Recently played</h2>
-
-            <div class="general-container-galleries"> 
+            
+             <div class="general-container-galleries"> 
+                <h2 class="title white-text">Recently played</h2>
                 <div class="cd-container flex one">  <!--First gallery row-->
-                    
-                        <div class="gallery"> 
-                            <div class="col"> <!--1st-->
+                        
+                            <div class="col"> <!--1st column-->
                                 <div class="disc">
                                     <a href="#"><img src="./img/metal_lifting.jpg" alt="Heavy Metal"></a>
                                     <div class="disc-text"> 
@@ -82,7 +90,7 @@
                                 </div>          
                             </div>
                                                 
-                            <div class="col">   <!--2nd-->
+                            <div class="col">   <!--2nd column-->
                                 <div class="disc">
                                     <a href="#"><img src="./img/stranger.jpeg" alt="Stranger Things"></a>
                                     <div class="disc-text"> 
@@ -92,7 +100,7 @@
                                 </div>        
                             </div>    
                     
-                            <div class="col"> <!--3rd-->
+                            <div class="col"> <!--3rd column-->
                                 <div class="disc"> 
                                     <a href="#"><img src="./img/aquietplace.jpeg" alt="A quiet place"></a>
                                     <div class="disc-text"> 
@@ -102,7 +110,7 @@
                                 </div>
                             </div>
                                 
-                            <div class="col">  <!--4th-->
+                            <div class="col">  <!--4th column-->
                                 <div class="disc"> 
                                     <a href="#"><img src="./img/split.jpeg" alt="Split"></a>
                                     <div class="disc-text"> 
@@ -112,7 +120,7 @@
                                 </div>     
                             </div>
 
-                            <div class="col">   <!--5th-->
+                            <div class="col">   <!--5th column-->
                                 <div class="disc"> 
                                     <a href="#"><img src="./img/cure.jpeg" alt="A cure for wellness"></a>
                                     <div class="disc-text"> 
@@ -122,7 +130,7 @@
                                 </div>
                             </div>
 
-                            <div class="col">   <!--6th-->
+                            <div class="col">   <!--6th column-->
                                 <div class="disc"> 
                                     <a href="#"><img src="./img/sinister.jpeg" alt="Sinister"></a>
                                     <div class="disc-text"> 
@@ -130,14 +138,15 @@
                                         <div>Subtitle</div>
                                     </div>
                                 </div>
-                            </div>   <!-- 6th col-->
-                        </div> <!--gallery-->
+                            </div>   <!-- /6th column-->
+                        
                     <!--/SPOTIFY CARDS  1st section-->     
                 </div>
-                <h2>Creato per John Doe</h2>
+
+                <h2 class="next title white-text">Creato per John Doe</h2>
                 <div>Più ascolti, più accurati saranno i suggerimenti.</div>
                 <div class="cd-container flex two">   <!--Second gallery row-->
-                    <div class="col">   <!--1st-->
+                    <div class="col">   <!--1st column-->
                         <div class="disc"> 
                             <a href="#"><img src="./img/radar.jpeg" alt="Release Radar"></a>
                             <div class="disc-text"> 
@@ -146,7 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="col">   <!--2ns-->
+                    <div class="col">   <!--2nd column-->
                         <div class="disc"> 
                             <a href="#"><img src="./img/mixdaily.jpeg" alt="Daily Mix 1"></a>
                             <div class="disc-text"> 
@@ -154,11 +163,12 @@
                             </div>
                         </div>
                     </div>  
-                </div> <!--container flex two-->
+                </div> <!--/container flex two-->
 
-                <h2>title </h2>
-                <div class="container flex three">
-                    <div class="col">   <!--6th-->
+                <h2 class="next title white-text">Artisti più popolari</h2>
+                <div>Più ascolti, più accurati saranno i suggerimenti</div>
+                <div class="cd-container flex three">  <!--Third gallery row-->
+                    <div class="col">   <!--1st column-->
                         <div class="disc"> 
                             <a href="#"><img src="./img/sinister.jpeg" alt="Sinister"></a>
                             <div class="disc-text"> 
@@ -170,15 +180,15 @@
                 </div> <!--/container flex three-->
             </div> <!--/general-container-galleries-->
 
-        </section> <!--/class content-->
+        </section> <!--/class=content-->
 
             </div>
         </div>
     </main>
 
     <!--Footer-->
-    <footer>
-        <div>hello</div>
+    <footer class="flex">
+        <div>FOOTER  ---------></div>
 
     </footer>
 
