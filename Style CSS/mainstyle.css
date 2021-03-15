@@ -110,8 +110,9 @@ aside {
     padding-left: 20px;
 }
 
-.bottom-aside.white-text .install-app a {
+.bottom-aside.white-text .install-app  {
     margin-bottom: 50px;
+    border-bottom: 1px solid gray;
 }
 
 .profile-img.flex {
@@ -270,6 +271,9 @@ footer {
     background-color: #3b3a3a
 }
 
+.player-album .footer-img {
+    max-width: 50%;
+}
 /*__________________________________________________ /*
 
         /*RESPONSIVE */
