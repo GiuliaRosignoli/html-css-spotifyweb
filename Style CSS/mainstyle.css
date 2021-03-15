@@ -15,6 +15,7 @@
 
 a {
     color: #fff;
+    text-decoration: none;
 }
 
 /* UTILITIES */
@@ -30,6 +31,11 @@ a {
 .bold {
     font-weight: bold;
 }
+
+.border-radius {
+    border-radius: 50%;
+}
+
 
 /* Aside */
 
@@ -60,7 +66,6 @@ aside {
 
 .sidebar-content a {
     color: #fff;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -98,13 +103,15 @@ aside {
 
 .bottom-aside {
     height: 80px;
-  /*  padding-top: 100px; */
-    background-color: black;
-    
+    background-color: black; 
 }
 
-.bottom-aside.text {
-    margin-bottom: 1px solid #fff;
+.bottom-aside.white-text {
+    padding-left: 20px;
+}
+
+.bottom-aside.white-text .install-app a {
+    margin-bottom: 50px;
 }
 
 .profile-img.flex {
@@ -114,7 +121,6 @@ aside {
     background-color: gray;
     border-radius: 50%;
 }
-
 
 
 /* CONTENT */
@@ -140,8 +146,6 @@ aside {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /*text-align: right;
-    align-content: flex-end; */
 }
 
 .header-content .first-button {
@@ -215,7 +219,33 @@ aside {
 }
 
 .disc {
+    position: relative;
     height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-play-circle {
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.image .overlay:hover .fa-play-circle {
+    opacity: 1;
 }
 
 .disc img {
@@ -237,7 +267,7 @@ aside {
 
 footer {
     height: 50px;
-    background-color: blueviolet;
+    background-color: #3b3a3a
 }
 
 /*__________________________________________________ /*
@@ -256,15 +286,4 @@ footer {
         display: none;
     }
 }
-
-
-
-
-/*  Notes:
-   The navbar does scroll
-   Bottom aside - flex / position? 
-   Footer - text (and how to insert a player) 
-   Responsive - mediaqueries and flex columns? */
-   
-   
 
