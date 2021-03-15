@@ -31,7 +31,7 @@
                 <div><a href="#"><img class="small-icon" src="./img/libreria.svg" alt="libreria"> La tua libreria</a></div>
 
                 <div class="playlist bold">PLAYLIST</div> <!--Playlist list-item-->
-                <div><a href="#"><span><i class="fas fa-plus-square"></i></span>Crea Playlist</a></div>
+                <div><a class="playlist-action flex" href="#"><span><i class="fas fa-plus-square"></i></span>Crea Playlist</a></div>
         
                 <ul>
                     <li><a href="#">Nome Playlist</a></li>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="bottom-aside white-text"> <!--Sidebar Bottom section-->
-                <div class="install-app"><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a></div>
+                <div class="install-app flex"><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a></div>
                 <div class="profile-img flex">
                     <img src="./img/profile.svg" alt="Profile-img">
                     <h3 class="white-text">John Doe</h3>
@@ -64,7 +64,7 @@
                     <nav> 
                          <div class="menu flex">
                              <ul class="list flex">
-                                 <li><a href="#">IN EVIDENZA</a></li>
+                                 <li><a class="underline" href="#">IN EVIDENZA</a></li>
                                  <li><a href="#">PODCAST</a></li>
                                  <li><a href="#">CLASSIFICHE</a></li>
                                  <li><a href="#">GENERI E MOOD</a></li>
@@ -159,7 +159,7 @@
                     <!--/SPOTIFY CARDS  1st section-->     
                 </div>
     
-                <h2 class="next title white-text">Creato per John Doe</h2>
+                <h2  class="next title white-text">Creato per John Doe</h2>
                 <div class="galleries-text">Più ascolti, più accurati saranno i suggerimenti.</div>
                 <div class="cd-container flex two">   <!--Second gallery row-->
                     <div class="col">   <!--1st column-->
@@ -187,7 +187,7 @@
                     </div>  
                 </div> <!--/container flex two-->
 
-                <h2 class="next title white-text">Artisti più popolari</h2>
+                <h2 id="special-title2" class="next title white-text">Artisti più popolari</h2>
                 <div class="galleries-text">Più ascolti, più accurati saranno i suggerimenti</div>
                 <div class="cd-container flex three">  <!--Third gallery row-->
                     <div class="col">   <!--1st column-->
@@ -225,18 +225,16 @@
 
     <footer class="player flex">
 
-        <div class="player-album">
-            <div>
-                <img class="footer-img" src="./img/sinister.jpeg" alt="sinister">
-                <h4 class="white-text">Sinister</h4>
-                <div>Brano nome</div>
-            </div>
-        </div>
-        <div class="player-controller">
+        <div class="player-album flex"> <!--1st footer container flex-->
+            <div class="box"></div>   <!--img + text-->
+        </div> <!--Inside each element use flex direction column instead of row (vertical content)-->
 
+        <div class="player-controller flex"> <!--2nd footer container flex-->
+            <div class="box"></div>   <!--bigger player (pseudo-element)-->
         </div>
-        <div class="player-audio">
 
+        <div class="player-audio flex">  <!--3rd footer container flex-->
+            <div class="box"></div> <!--smaller player-->
         </div>
 
     </footer>

@@ -89,6 +89,10 @@ aside {
     padding-top: 20px;
 }
 
+.playlist-action {
+    align-items: center;
+}
+
 .sidebar-content ul li {
     padding-bottom: 16px;
     padding-left: 20px;
@@ -108,17 +112,23 @@ aside {
 
 .bottom-aside.white-text {
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .bottom-aside.white-text .install-app  {
-    margin-bottom: 50px;
+    padding: 10px 0;
     border-bottom: 1px solid gray;
 }
 
 .profile-img.flex {
-    margin-right: 5px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.profile-img.flex img {
     width: 25px;
-    height: 25px;
+    height: 25px; 
+    margin-right: 5px;
     background-color: gray;
     border-radius: 50%;
 }
@@ -184,6 +194,23 @@ aside {
     font-size: 12px;
 }
 
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -8px;
+    margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 50%;
+	background: green;
+    
+}
+
 .next.title.white-text {
     font-size: 1.5rem;
     padding-top: 100px;
@@ -196,6 +223,9 @@ aside {
     padding-top: 50px;
 }
 
+ #special-title2 {
+    padding-top: 50px;
+} 
 
 /* SPOTIFY CARDS section */
 
@@ -272,8 +302,15 @@ footer {
     background-color: #3b3a3a
 }
 
-.player-album .footer-img {
-    max-width: 100%;
+.player.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
 }
 
 
