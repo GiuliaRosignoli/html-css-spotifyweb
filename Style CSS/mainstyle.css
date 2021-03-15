@@ -27,10 +27,14 @@ a {
     display: flex;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Aside */
 
 .logo-img  {
-    max-width: 180px;
+    max-width: 100%;
     margin-top: 20px;
     margin-bottom: 25px;
     padding: 0 20px;
@@ -41,17 +45,12 @@ a {
 }
 
 aside {
-    width: 15%;
-    height: 100vh;
+    width: 230px;
     background-color: black;
 }
 
-.sidebar {
-    height: calc(100% - 80px);
-}
-
 .sidebar-content {  
-    height: 100%;
+    height: calc(100% - 80px);
 }
 
 .sidebar-content div {
@@ -74,20 +73,15 @@ aside {
     max-width: 16px;
     max-height: 16px;
 }
-
-aside {
-    flex-grow: 1;
-    height: calc(100vh - 50px);
-}
-
-.sidebar-content div:nth-child(5) {
-    padding-top: 20px;
-}
     
 .sidebar-content .fa-plus-square {
     padding: 10px 0;
     padding-right: 10px;
     font-size: 40px;
+}
+
+.playlist.bold {
+    padding-top: 20px;
 }
 
 .sidebar-content ul li {
@@ -104,7 +98,7 @@ aside {
 
 .bottom-aside {
     height: 80px;
-    padding-top: 100px;
+  /*  padding-top: 100px; */
     background-color: black;
     
 }
@@ -139,7 +133,6 @@ aside {
     height: 100%;
     flex-grow: 1;
     width: 85%;
-    overflow-y: auto;
     background-color: #161e27;
 }
 
@@ -185,30 +178,35 @@ aside {
     text-decoration: none;
 }
 
-.title.white-text {
-    font-size: 1.5rem;
-    padding-left: 30px;
-    padding-bottom: 25px;
-}
-
 .next.title.white-text {
+    font-size: 1.5rem;
     padding-top: 100px;
     padding-bottom: 10px;
+    padding-left: 8px;
+}
+
+#special-title {
+    padding-bottom: 30px;
+    padding-top: 50px;
 }
 
 
 /* SPOTIFY CARDS section */
 
-/*.general-container-galleries {
-    height: calc(100vh - 170px);
-    padding: 20px 0; */
+.general-container-galleries {
+    height: 100%;
+    padding: 80px 15px 0;
+    overflow-y: auto;
+} 
+
+.galleries-text {
+    padding-bottom: 20px;
+    padding-left: 8px;
 }
 
 .general-container-galleries .cd-container.flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    height: 100%;
 }
 
 .col {
@@ -249,7 +247,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media and screen (min-width: 601px) {
+@media screen and (max-width: 600px) {
     .small-logo {
         display: block;
     }
