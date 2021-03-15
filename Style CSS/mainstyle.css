@@ -181,6 +181,7 @@ aside {
 
 .container .menu.flex li a {
     text-decoration: none;
+    font-size: 12px;
 }
 
 .next.title.white-text {
@@ -272,8 +273,11 @@ footer {
 }
 
 .player-album .footer-img {
-    max-width: 50%;
+    max-width: 100%;
 }
+
+
+
 /*__________________________________________________ /*
 
         /*RESPONSIVE */
