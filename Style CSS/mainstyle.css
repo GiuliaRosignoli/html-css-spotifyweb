@@ -62,10 +62,12 @@ a:hover {
 aside {
     width: 230px;
     background-color: black;
+    overflow-y: hidden;
 }
 
 .sidebar-content {  
     height: calc(100% - 80px);
+    overflow-y: hidden;
 }
 
 .sidebar-content div {
@@ -131,6 +133,7 @@ aside {
 .bottom-aside {
     height: 80px;
     background-color: black; 
+    overflow-y: hidden;
 }
 
 .bottom-aside.white-text {
@@ -351,6 +354,10 @@ footer {
 
 /* Footer left */
 
+.player-album, .player-audio {
+    flex-basis: 230px;
+}
+
 .footer-left-img {
     max-width: 48x;
     max-height: 48px;
@@ -360,6 +367,10 @@ footer {
 
 .player-album.flex {
     align-items: center;
+}
+
+.player-controller .icons {
+    justify-content: center;
 }
 
 #special-text-size, #special-text-size2 {
@@ -387,11 +398,52 @@ footer {
     font-size: 14px;
 }
 
-.footer-main-bar {
-    position: relative;
+.time-bar.flex {
+    align-items: center;
 }
 
-.footer-main-bar::after {
+.footer-main-bar {
+    width: 400px;
+    height: 3px;
+    background: rgb(138, 127, 127);
+}
+
+.timer {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.footer-main-bar .short-bar {
+    background-color: #fff;
+    height: 100%;
+    width: 30%;
+}
+
+
+/* Footer right */
+
+.player-audio {
+    align-items: center;
+} 
+
+.player-audio {
+    padding-right: 8px;
+}
+
+.player-audio .secondary-bar {
+    width: 100px;
+    height: 3px;
+    background-color:  rgb(138, 127, 127);
+}
+
+.player-audio .secondary-bar .short-bar-two {
+    background-color: #fff;
+    height: 100%;
+    width: 20%;
+}
+
+
+/*.footer-main-bar::after {
     position: absolute;
     content: '';
     height: 3px;
@@ -399,10 +451,10 @@ footer {
     left: 0;
     right: 0;
     bottom: -6px;
-    width: 300px;
-    background: rgb(138, 127, 127);
+   
+    
 }
-
+*/
 
 
 /*__________________________________________________ /*
@@ -445,6 +497,36 @@ footer {
     .logo-img {
         display: none;
     } 
+
+    .sidebar-content.gray-text i {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .sidebar-content.gray-text .small-icon {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .sidebar-content.gray-text  ul {
+        display: none;
+    }
+
+    .upper-menu {
+        display: none;
+    }
+
+    .playlist.bold.white-text {
+        display: none;
+    }
+    
+    .playlist-action.flex {
+        display: none;
+    }
+    
+    /* gallery */
+
+
 }
 
 
