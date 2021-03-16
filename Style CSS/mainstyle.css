@@ -6,22 +6,31 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
-    color: #fff;
+    color: gray;
 }
 
 .container {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 } 
 
 a {
-    color: #fff;
+    color: gray;
     text-decoration: none;
 }
+
+a:hover {
+    color: #fff;
+}
+
 
 /* UTILITIES */
 
 .white-text {
     color: #fff;
+}
+
+.gray-text {
+    color: gray;
 }
 
 .flex {
@@ -65,7 +74,7 @@ aside {
 }
 
 .sidebar-content a {
-    color: #fff;
+    color: gray;
     cursor: pointer;
 }
 
@@ -93,15 +102,29 @@ aside {
     align-items: center;
 }
 
+.upper-menu {
+    padding-left: 6px;
+}
+
+.upper-menu:hover {
+    color: #fff;
+}
+
 .sidebar-content ul li {
     padding-bottom: 16px;
     padding-left: 20px;
     list-style: none;
-}
-
-.sidebar-content ul li {
     text-decoration: none;
 }
+
+.sidebar-content ul li a {
+    color: gray;
+}
+
+.sidebar-content ul li:hover a {
+    color: #fff;
+}
+
 
 /* Bottom Aside */
 
@@ -164,12 +187,17 @@ aside {
     justify-content: flex-end;
     align-items: center;
     height: 30px;
-    padding: 20px 30px;
+    padding: 20px 28px;
     margin-right: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #fff;
+    border: 1px solid gray;
     border-radius: 30px;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+.header-content .first-button:hover {
+    transform: scale(1.1);
 }
 
 /* Top- menu */
@@ -186,13 +214,17 @@ aside {
     padding: 10px;
     padding-right: 20px;
     list-style: none;
-    color: #fff;
 }
 
 .container .menu.flex li a {
     text-decoration: none;
     font-size: 12px;
-}
+    color: gray;
+}   
+
+.container .menu.flex li:hover a {
+    color: #fff;
+} 
 
 .underline {
     position: relative;
@@ -207,8 +239,7 @@ aside {
 	left: 0;
     right: 0;
 	width: 50%;
-	background: green;
-    
+	background: green;  
 }
 
 .next.title.white-text {
@@ -226,6 +257,8 @@ aside {
  #special-title2 {
     padding-top: 50px;
 } 
+
+
 
 /* SPOTIFY CARDS section */
 
@@ -248,6 +281,11 @@ aside {
 .col {
     flex-basis: calc(100% / 6 - 10px);
     padding: 5px;
+}
+
+.col .disc h4 {
+    padding-top: 15px;
+    color: #fff;
 }
 
 .disc {
@@ -298,7 +336,7 @@ aside {
 /* FOOTER */
 
 footer {
-    height: 50px;
+    height: 80px;
     background-color: #3b3a3a
 }
 
@@ -307,12 +345,23 @@ footer {
     align-items: center;
 }
 
-.box {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+.footer-left-img {
+    max-width: 48x;
+    max-height: 48px;
+    padding: 6px;
 }
 
+.player-album.flex {
+    align-items: center;
+}
+
+#special-text-size, #special-text-size2 {
+    font-size: 11px;
+}
+
+#special-text-size {
+    color: #fff;
+}
 
 
 /*__________________________________________________ /*

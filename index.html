@@ -23,14 +23,14 @@
     <main class="container flex"> <!--All sections (excluded footer): sidebar, header, CD galleries-->
         <aside class="sidebar">
             <!--Sidebar-->    <!--top-->
-            <div class="sidebar-content white-text"> <!--Full-size Logo -->
+            <div class="sidebar-content gray-text"> <!--Full-size Logo -->
                 <a href="#"><img class="logo-img" src="./img/logo.svg" alt="Logo Spotify"></a>
                 <a href="#"><img class="small-logo" src="./img/logo-small.svg" alt="Small-size Logo Spotify"></a>
-                <div><a href="#"><span><i class="fas fa-home"></i></span> Home</a></div>
-                <div><a href="#"><span><i class="fas fa-search"></i></span> Cerca</a></div>
-                <div><a href="#"><img class="small-icon" src="./img/libreria.svg" alt="libreria"> La tua libreria</a></div>
+                <div><a href="#"><span><i class="fas fa-home"></i></span><span class="upper-menu">Home</span></a></div>
+                <div><a href="#"><span><i class="fas fa-search"></i></span><span class="upper-menu">Cerca</span></a></div>
+                <div><a href="#"><img class="small-icon" src="./img/libreria.svg" alt="libreria"><span class="upper-menu">La tua libreria</span></a></div>
 
-                <div class="playlist bold">PLAYLIST</div> <!--Playlist list-item-->
+                <div class="playlist bold white-text">PLAYLIST</div> <!--Playlist list-item-->
                 <div><a class="playlist-action flex" href="#"><span><i class="fas fa-plus-square"></i></span>Crea Playlist</a></div>
         
                 <ul>
@@ -226,7 +226,12 @@
     <footer class="player flex">
 
         <div class="player-album flex"> <!--1st footer container flex-->
-            <div class="box"></div>   <!--img + text-->
+                <img class="footer-left-img" src="./img/sinister.jpeg" alt="sinister">
+               <!--img + text-->
+            <div class="footer-left-text">
+                <h5 id="special-text-size">Sinister</h5>
+                <div id="special-text-size2">Brano Nome</div>
+            </div>
         </div> <!--Inside each element use flex direction column instead of row (vertical content)-->
 
         <div class="player-controller flex"> <!--2nd footer container flex-->
