@@ -141,7 +141,7 @@ aside {
     padding-right: 20px;
 }
 
-.bottom-aside.white-text .install-app  {
+.install-app  {
     padding: 10px 0;
     border-bottom: 1px solid gray;
 }
@@ -373,7 +373,7 @@ footer {
     justify-content: center;
 }
 
-#special-text-size, #special-text-size2 {
+#special-text-size, #special-text-size2 a {
     font-size: 11px;
 }
 
@@ -403,6 +403,7 @@ footer {
 }
 
 .footer-main-bar {
+    position: relative;
     width: 400px;
     height: 3px;
     background: rgb(138, 127, 127);
@@ -417,6 +418,19 @@ footer {
     background-color: #fff;
     height: 100%;
     width: 30%;
+}
+
+
+.footer-main-bar:hover::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 30%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
 }
 
 
@@ -443,18 +457,7 @@ footer {
 }
 
 
-/*.footer-main-bar::after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -6px;
    
-    
-}
-*/
 
 
 /*__________________________________________________ /*
