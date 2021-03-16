@@ -404,10 +404,31 @@ footer {
 
         /*RESPONSIVE */
 
-
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
+/* media MD max 1199px min 768px */
+
+/*@media screen and (max-width: 1199px) and (min-width:768px) {
+
+} 
+
+
+
+
+
+
+/* media S  max 767px  min 601px */
+
+/*@media screen and (max-width:767px) and (min-width:601px) {
+
+}  */
+
+
+
+
+/* media xs max 600px min 549px */
+
+@media screen and (max-width: 600px) and (min-width:300px) {
     .small-logo {
         display: block;
         max-width: 70%;
@@ -418,6 +439,17 @@ footer {
 
     .logo-img {
         display: none;
-    }
+    } 
 }
+
+
+
+
+
+
+
+
+
+
+
 
