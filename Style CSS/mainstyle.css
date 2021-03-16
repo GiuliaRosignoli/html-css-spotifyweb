@@ -142,7 +142,9 @@ aside {
 }
 
 .install-app  {
+    display: inline-block;
     padding: 10px 0;
+    padding-left: 10px;
     border-bottom: 1px solid gray;
 }
 
@@ -489,9 +491,9 @@ footer {
 /* media xs max 600px min 549px */
 
 @media screen and (max-width: 600px) and (min-width:300px) {
-    .small-logo {
+    .small-logo {     /*Aside */
         display: block;
-        max-width: 70%;
+        max-width: 90%;
         margin-top: 20px;
         margin-bottom: 25px;
         padding: 0 20px;
@@ -502,13 +504,13 @@ footer {
     } 
 
     .sidebar-content.gray-text i {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
     }
     
     .sidebar-content.gray-text .small-icon {
-        max-width: 35px;
-        max-height: 35px;
+        max-width: 30px;
+        max-height: 30px;
     }
 
     .sidebar-content.gray-text  ul {
@@ -526,8 +528,42 @@ footer {
     .playlist-action.flex {
         display: none;
     }
+
+    .bottom-aside.white-text .install-app  {
+        display: none;
+    }
+
+    .white-text.john-doe {
+        display: none;
+    }
+
+    .bottom-aside.white-text .profile-img.flex img {
+        width: 25px;
+        height: 25px;
+    }
     
+    .bottom-aside.white-text .fa-arrow-alt-circle-down  {
+        padding-right: 100px;
+        font-size: 20px;
+    }
+
+    .header-content .first-button { 
+    height: 18px;
+    padding: 20px 28px;
+    margin-right: 10px;
+    }
+
+    /* menu flex */
+    .menu.flex .list.flex li {
+        flex-basis: calc(100% / 3 - 10px);
+        flex-wrap: wrap;
+    }
     /* gallery */
+
+    .col {
+        flex-basis: calc(100% / 2 - 10px);
+        padding: 5px;
+    }
 
 
 }
