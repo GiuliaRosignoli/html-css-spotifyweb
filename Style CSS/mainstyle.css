@@ -288,6 +288,10 @@ aside {
     color: #fff;
 }
 
+.col .disc .disc-text div {
+    padding-top: 10px;
+}
+
 .disc {
     position: relative;
     height: 200px;
