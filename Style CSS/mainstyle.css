@@ -113,8 +113,9 @@ aside {
 }
 
 .sidebar-content ul li {
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     padding-left: 20px;
+    font-size: 0.8rem;
     list-style: none;
     text-decoration: none;
 }
@@ -299,8 +300,12 @@ aside {
 }
 
 .disc {
+    max-height: 200px;
+}
+
+.image {
     position: relative;
-    height: 200px;
+    height: 100%;
 }
 
 .overlay {
@@ -309,6 +314,7 @@ aside {
     left: 0;
     right: 0;
     bottom: 0;
+    transition: all .3s;
 }
 
 .overlay:hover {
@@ -572,15 +578,19 @@ footer {
     }
 
     .cd-container.flex .second.col {
-        padding-top: 50px;
+        padding-top: 45px;
     }
 
     .next.title.white-text {
-        padding-top: 40px;
+        padding-top: 25px;
     }
 
     #special-title2 {
-        padding-top: 20px;
+        padding-top: 6px;
+    }
+
+    .cd-container.flex .second.col {
+        padding-top: 55px;
     }
 
     .overlay {
@@ -621,7 +631,7 @@ footer {
         max-height: 20px;
     }
 
-    .sidebar-content.gray-text  ul {
+    .sidebar-content.gray-text ul {
         display: none;
     }
 
@@ -636,6 +646,16 @@ footer {
     .playlist-action.flex {
         display: none;
     }
+
+    .sidebar-content ul li {
+        padding-bottom: 10px;
+    }
+
+    .sidebar-content ul li a {   
+        font-size: 10px;
+    }
+
+    /* bottom */
 
     .bottom-aside.white-text .install-app  {
         display: none;
