@@ -533,7 +533,15 @@ footer {
     #special-title2 {
         padding-top: 30px;
     }
+
 } 
+
+/* 768px -1024px / Overlay settings */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .overlay {
+        display: none;
+    }
+}
 
 
  /*media S  max 767px  min 601px */
@@ -573,6 +581,10 @@ footer {
 
     #special-title2 {
         padding-top: 20px;
+    }
+
+    .overlay {
+        display: none;
     }
 
 }  
@@ -683,6 +695,9 @@ footer {
         flex-basis: 100px;
     }
 
+    .overlay {
+        display: none;
+    }
 }
 
 
