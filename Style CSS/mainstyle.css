@@ -89,6 +89,24 @@ aside {
     max-width: 16px;
     max-height: 16px;
 }
+
+#pseudo-bar {
+    position: relative;
+}
+
+#pseudo-bar::before {
+position: absolute;
+content: '';
+height: 20px;
+width: 2px;
+margin: 0;
+right: 0;
+left: -8px;
+top: 0;
+z-index: 10;
+background-color: green;
+}
+
     
 .sidebar-content .fa-plus-square {
     padding: 10px 0;
@@ -577,8 +595,18 @@ footer {
         font-size: 10px;
     }
     
-
 } 
+
+/* 896px - 1198px */
+@media screen and (max-width: 1198px) and (min-width: 896px) {
+    .next.title.white-text {
+        padding-top: 90px;
+    }
+
+    #special-title2 {
+        padding-top: 60px;
+    }
+}
 
 /* 768px -1024px / Overlay settings */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
