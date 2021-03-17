@@ -487,7 +487,15 @@ footer {
     z-index: 10;
     background-color: #fff;
 }
+ /* Footer buttons without previous style */
 
+.no-style-button {
+    color: inherit;
+    background-color: inherit;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
 
 
 /*__________________________________________________ /*
