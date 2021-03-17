@@ -428,10 +428,13 @@ footer {
     background-color: #fff;
     height: 100%;
     width: 30%;
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
 }
 
 .footer-main-bar:hover .short-bar {
     background-color: green;
+    opacity: 1;
 }
 
 .footer-main-bar:hover .short-bar::after {
@@ -469,10 +472,13 @@ footer {
     background-color: #fff;
     height: 100%;
     width: 20%;
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
 }
 
 .player-audio .secondary-bar:hover .short-bar-two {
     background-color: green;
+    opacity: 1;
 }
 
 .player-audio .secondary-bar:hover .short-bar-two::after {
@@ -487,7 +493,7 @@ footer {
     z-index: 10;
     background-color: #fff;
 }
- /* Footer buttons without previous style */
+ /* Footer buttons without their own style */
 
 .no-style-button {
     color: inherit;
@@ -548,6 +554,30 @@ footer {
         padding-top: 30px;
     }
 
+    /* Footer */
+
+    .footer-left-img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .special-text-size, .special-text-size2 {
+        font-size: 6px;
+    }
+
+    .player-album, .player-audio {
+        flex-basis: 25%;
+    }
+
+    .player-controller {
+        width: 35%;
+    }
+
+    .player-controller.flex .icons-flex .no-style-button{
+        font-size: 10px;
+    }
+    
+
 } 
 
 /* 768px -1024px / Overlay settings */
@@ -604,6 +634,29 @@ footer {
     .overlay {
         display: none;
     }
+    /* Footer */
+
+    .footer-left-img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .special-text-size, .special-text-size2 {
+        font-size: 6px;
+    }
+
+    .player-album, .player-audio {
+        flex-basis: 25%;
+    }
+
+    .player-controller {
+        width: 35%;
+    }
+
+    .player-controller.flex .icons-flex .no-style-button{
+        font-size: 10px;
+    }
+    
 
 }  
 
@@ -719,13 +772,33 @@ footer {
         padding: 5px;
     }
 
-    .player-album, .player-audio {
-        flex-basis: 100px;
-    }
-
+    
     .overlay {
         display: none;
     }
+
+    /* Footer */
+    .footer-left-img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .special-text-size, .special-text-size2 {
+        font-size: 6px;
+    }
+
+    .player-album, .player-audio {
+        flex-basis: 25%;
+    }
+
+    .player-controller {
+        width: 35%;
+    }
+
+    .player-controller.flex .icons-flex .no-style-button{
+        font-size: 10px;
+    }
+    
 }
 
 
